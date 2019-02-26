@@ -4,7 +4,7 @@ import person.Student;
 
 public class Internship {
     public Internship(String name) {
-        //TODO: Implementation is needed
+       this.intership = name; //TODO: Implementation is needed
     }
 
     public void setStudent(Student student) {
