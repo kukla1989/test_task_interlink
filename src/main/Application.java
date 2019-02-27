@@ -14,6 +14,7 @@ public class Application {
 
         Internship internship = new Internship("Interlink");
         System.out.println("List of internship's students:");
+        internship.setStudents(university.getStudents());
         System.out.println(internship.getStudents());
     }
 }
