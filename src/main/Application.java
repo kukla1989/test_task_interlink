@@ -4,6 +4,8 @@ import institution.University;
 import institution.interlink.Internship;
 import person.Student;
 
+import java.util.Random;
+
 public class Application {
 
     public static void main(String[] args) {
@@ -11,6 +13,7 @@ public class Application {
         university.addStudent(new Student("Andrew Kostenko"));
         university.addStudent(new Student("Julia Veselkina"));
         university.addStudent(new Student("Maria Perechrest"));
+        university.giveStudentsKnowledge();
 
         Internship internship = new Internship("Interlink");
         System.out.println("List of internship's students:");

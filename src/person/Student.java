@@ -10,9 +10,12 @@ public class Student {
         this.name = name;
     }
 
-
     public Knowledge getKnowledge() {
         return knowledge;
+    }
+
+    public String getName(){
+        return name;
     }
 
     public void setKnowledge(Knowledge knowledge) {

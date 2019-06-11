@@ -10,6 +10,7 @@ public class University {
     ArrayList<Student> students = new ArrayList<Student>();
 
     public University(String name) {
+
         this.name = name;
     }
 
@@ -17,15 +18,14 @@ public class University {
         return students;
     }
 
-    private  void giveStudentsKnowledge(){
+    public   void giveStudentsKnowledge(){
         Random random = new Random();
         for (Student studentWithoutKnowledge :this.students) {
-            studentWithoutKnowledge.setKnowledge(new Knowledge(random.nextInt(5)));
+            studentWithoutKnowledge.setKnowledge(new Knowledge(random.nextInt(40) + 60));
         }
     }
 
     public void addStudent(Student student) {
         this.students.add(student);
-        giveStudentsKnowledge();
     }
 }
